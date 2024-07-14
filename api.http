@@ -1,0 +1,45 @@
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json 
+
+{
+    "user_fullname": "Usuario 1",
+    "email": "user1@gmail.com",
+    "password": "123456",
+    "phone": "11-1122-3344",
+    "birthday": "1969-12-10"
+}
+
+###
+POST http://localhost:3000/users/register
+Content-Type: application/json 
+
+{
+    "user_fullname" : "SuperADMIN",
+    "email": "superadmin@gmail.com",
+    "password" : "admin1234",
+    "phone" : "11-1234-5678",
+    "birthday" : "23/06/1999",
+    "question" : "¿Cuál es tu fecha de nacimiento?",
+    "answer" : "23",
+    "isAdmin" : true
+
+}
+
+
+###
+
+DELETE http://localhost:3000/users/1
+Content-Type: application/json
+
+######
+
+PUT http://localhost:3000/users/9
+Content-Type: application/json
+
+{
+    "user_fullname": "SuperAdmin",
+    "email": "superadmin@gmail.com"
+}
